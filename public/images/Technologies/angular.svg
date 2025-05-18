@@ -1,0 +1,25 @@
+<svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="angular-icon 1" clip-path="url(#clip0_717_2466)">
+<g id="Group">
+<path id="Vector" d="M48.3951 9.26753L46.6636 36.4585L30.1078 0.804688L48.3951 9.26753ZM36.928 44.4268L24.4184 51.5647L11.9085 44.4268L14.4529 38.2606H34.3837L36.928 44.4268ZM24.4184 14.3383L30.9735 30.2748H17.8631L24.4184 14.3383ZM2.15527 36.4585L0.441406 9.26753L18.7288 0.804688L2.15527 36.4585Z" fill="url(#paint0_linear_717_2466)"/>
+<path id="Vector_2" d="M48.3951 9.26753L46.6636 36.4585L30.1078 0.804688L48.3951 9.26753ZM36.928 44.4268L24.4184 51.5647L11.9085 44.4268L14.4529 38.2606H34.3837L36.928 44.4268ZM24.4184 14.3383L30.9735 30.2748H17.8631L24.4184 14.3383ZM2.15527 36.4585L0.441406 9.26753L18.7288 0.804688L2.15527 36.4585Z" fill="url(#paint1_linear_717_2466)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_717_2466" x1="1202.71" y1="4616.37" x2="4685.96" y2="2961.07" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E40035"/>
+<stop offset="0.24" stop-color="#F60A48"/>
+<stop offset="0.352" stop-color="#F20755"/>
+<stop offset="0.494" stop-color="#DC087D"/>
+<stop offset="0.745" stop-color="#9717E7"/>
+<stop offset="1" stop-color="#6C00F5"/>
+</linearGradient>
+<linearGradient id="paint1_linear_717_2466" x1="1048.85" y1="612.845" x2="3430.8" y2="3329.99" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF31D9"/>
+<stop offset="1" stop-color="#FF5BE1" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_717_2466">
+<rect width="47.9537" height="50.7635" fill="white" transform="translate(0.441406 0.804199)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-outline {
+  -webkit-text-stroke: 1px black; /* Stroke thickness & color */
+}
+
+.text-outline-gray {
+  -webkit-text-stroke: 1px #E6E6E680; /* Stroke thickness & color */
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url("/fonts/GeneralSans-Variable.woff2") format("woff2"),
+    url("/fonts/GeneralSans-Variable.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agdasima";
+  src: url("/fonts/Agdasima.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+}
