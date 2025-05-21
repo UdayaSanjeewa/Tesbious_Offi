@@ -2,6 +2,9 @@ import React from "react";
 import OurPortfolioTItle from "../../molecules/HomePage/OurPortfolioTItle";
 import ProjectCard from "../../molecules/HomePage/ProjectCard";
 import AutoSliderMobile from "../../molecules/HomePage/AutoSliderMobile";
+import ProjectCardOne from "./StaticSections/ProjectCardOne";
+import ProjectCardTwo from "./StaticSections/ProjectCardTwo";
+import ProjectCardThree from "./StaticSections/ProjectCardThree";
 
 function OurPortfolio() {
   const projects = [
@@ -39,31 +42,11 @@ function OurPortfolio() {
       </div>
 
       <div className="hidden sm:flex w-full justify-between sm:mt-[50px] lg:mt-[100px]">
-        <ProjectCard
-          imageSrc="/images/projectImg.png"
-          category="Web"
-          title="Enter Project Name"
-          link="/"
-        />{" "}
-        <ProjectCard
-          imageSrc="/images/projectImg.png"
-          category="Web"
-          title="Enter Project Name"
-          link="/"
-        />{" "}
-        <ProjectCard
-          imageSrc="/images/projectImg.png"
-          category="Web"
-          title="Enter Project Name"
-          link="/"
-        />{" "}
+        <ProjectCardOne /> {" "}
+        <ProjectCardTwo /> {" "}
+        <ProjectCardThree /> {" "}
         <div className="hidden xl:flex">
-          <ProjectCard
-            imageSrc="/images/projectImg.png"
-            category="Web"
-            title="Enter Project Name"
-            link="/"
-          />
+          <ProjectCardOne />
         </div>
       </div>
 
