@@ -6,6 +6,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import Logo from "../../atoms/Image";
 import { ArrowUpRight } from "lucide-react";
+import LogoStatic from "./StaticSections/LogoStatic";
+import LogoStaticTwo from "./StaticSections/LogoStaticTwo";
 
 export const AboutUs: React.FC = () => {
   const router = useRouter();
@@ -14,13 +16,14 @@ export const AboutUs: React.FC = () => {
     <div>
       <div className="flex  mt-8  sm:mt-0 sm:items-center h-[900px] sm:h-[800px] lg:h-[1000px] sm:w-full justify-center">
         <div className="hidden sm:flex sm:mr-[20px] xl:mr-[200px]">
-          <Logo
+          {/* <Logo
             src="/images/coffeee.jpg"
             alt="Coffeeee"
             height={568}
             width={530}
             className="sm:w-[280px] md:w-[310px] lg:w-[400px]"
-          />
+          /> */}
+          <LogoStatic />
         </div>
 
         <div>
@@ -32,13 +35,14 @@ export const AboutUs: React.FC = () => {
               />
             </div>
             <div className="sm:hidden flex w-full justify-center">
-              <Logo
+              {/* <Logo
                 src="/images/projectImg.png"
                 alt="Coffeeee"
                 height={207}
                 width={351}
                 className="rounded-[15px]"
-              />
+              /> */}
+              <LogoStaticTwo />
             </div>
 
             <div className="lg:w-[555px] ml-5 sm:ml-0 sm:w-[280px] md:w-[340px] lg:h-[104px]">
