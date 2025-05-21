@@ -59,7 +59,7 @@ export default function CommentsCardMobile({ comments }: CommentsCardMobileProps
                   <p className="text-[10px] font-[400]">Senior Shitposter</p>
                 </div>
               </div>
-              <p className="text-[13px] font-[400]">"These Cards Are Amazing, I Want To Use Them In My Project. Framer Motion Is A Godsend Ngl Tbh Fam 🙏"</p>
+              <p className="text-[13px] font-[400]">&#34;These Cards Are Amazing, I Want To Use Them In My Project. Framer Motion Is A Godsend Ngl Tbh Fam 🙏&#34;</p>
             </motion.div>
           </AnimatePresence>
         </div>
