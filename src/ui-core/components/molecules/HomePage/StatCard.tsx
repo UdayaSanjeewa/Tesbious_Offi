@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Paragraph } from "../../atoms/Typography";
-import Logo from "../../atoms/Image";
+import StatCardLogo from "../../organisms/HomePage/StaticSections/StatCardLogo";
 
 interface StatCardProps {
   number: string;
@@ -44,7 +44,7 @@ const StatCard: React.FC<StatCardProps> = ({ number, label }) => {
           className="text-[#413F3FBF] md:text-[25px] font-[400] text-[20px] xl:text-[28px]"
           text={label}
         />
-        <Logo src="/images/line.svg" className="xl:scale-150 md:scale-125" />
+        <StatCardLogo />
       </div>
     </div>
   );

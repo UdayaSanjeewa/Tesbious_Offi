@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
 
 type Comment = {
   name: string;
@@ -54,19 +53,13 @@ export default function CommentsCardMobile({ comments }: CommentsCardMobileProps
               transition={{ duration: 0.4 }}
             >
               <div className="flex items-center w-[300px]  space-x-4 mb-4">
-                <Image
-                  src={current.image}
-                  alt={current.name}
-                  width={46}
-                  height={46}
-                  className="rounded-full"
-                />
+                <img src="/images/code.png" alt="Elon Musk" className="rounded-full h-[46px] w-[46]" />
                 <div>
-                  <h3 className="text-[14px] font-[600]">{current.name}</h3>
-                  <p className="text-[10px] font-[400]">{current.title}</p>
+                  <h3 className="text-[14px] font-[600]">Elon Musk</h3>
+                  <p className="text-[10px] font-[400]">Senior Shitposter</p>
                 </div>
               </div>
-              <p className="text-[13px] font-[400]">{current.message}</p>
+              <p className="text-[13px] font-[400]">"These Cards Are Amazing, I Want To Use Them In My Project. Framer Motion Is A Godsend Ngl Tbh Fam 🙏"</p>
             </motion.div>
           </AnimatePresence>
         </div>

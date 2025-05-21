@@ -7,6 +7,15 @@ import PortfolioProjectCard from "../components/molecules/PortfolioProjectCard";
 import PortfolioContactUs from "../components/organisms/PortfolioPage/PortfolioContactUs";
 import { useRouter } from "next/navigation";
 import Footer from "../components/organisms/Footer";
+import PortfolioProjectCardTwo from "../components/organisms/PortfolioPage/PortfolioProjectCardTwo";
+import PortfolioProjectCardOne from "../components/organisms/PortfolioPage/PortfolioProjectCardOne";
+import PortfolioProjectCardThree from "../components/organisms/PortfolioPage/PortfolioProjectCardThree";
+import PortfolioProjectCardFour from "../components/organisms/PortfolioPage/PortfolioProjectCardFour";
+import PortfolioProjectCardFive from "../components/organisms/PortfolioPage/PortfolioProjectCardFive";
+import PortfolioProjectCardSix from "../components/organisms/PortfolioPage/PortfolioProjectCardSix";
+import PortfolioProjectCardSeven from "../components/organisms/PortfolioPage/PortfolioProjectCardSeven";
+import PortfolioProjectCardEight from "../components/organisms/PortfolioPage/PortfolioProjectCardEight";
+import PortfolioProjectCardNine from "../components/organisms/PortfolioPage/PortfolioProjectCardNine";
 
 function Portfolio() {
   const router = useRouter();
@@ -22,7 +31,7 @@ function Portfolio() {
         
         {/* Desktop project card */}
         <div className="hidden sm:grid lg:grid-cols-3 sm:gap-4 sm:mx-5 md:grid-cols-2">
-          <PortfolioProjectCard
+          <PortfolioProjectCardOne
             onClick={() => {
               const query = new URLSearchParams({
                 name: "Project 1",
@@ -41,7 +50,7 @@ function Portfolio() {
             paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius, lorem ut efficitur commodo, lacus ex cursus enim"
             topic="Project 1"
           />
-          <PortfolioProjectCard
+          <PortfolioProjectCardTwo
             onClick={() => {
               const query = new URLSearchParams({
                 name: "Project 2",
@@ -60,7 +69,7 @@ function Portfolio() {
             paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius, lorem ut efficitur commodo, lacus ex cursus enim"
             topic="Project 2"
           />
-          <PortfolioProjectCard
+          <PortfolioProjectCardThree
             onClick={() => {
               const query = new URLSearchParams({
                 name: "Project 3",
@@ -79,7 +88,7 @@ function Portfolio() {
             paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius, lorem ut efficitur commodo, lacus ex cursus enim"
             topic="Project 3"
           />
-          <PortfolioProjectCard
+          <PortfolioProjectCardFour
             onClick={() => {
               const query = new URLSearchParams({
                 name: "Project 4",
@@ -97,7 +106,7 @@ function Portfolio() {
             paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius, lorem ut efficitur commodo, lacus ex cursus enim"
             topic="Project 4"
           />
-          <PortfolioProjectCard
+          <PortfolioProjectCardFive
             onClick={() => {
               const query = new URLSearchParams({
                 name: "Project 5",
@@ -115,7 +124,7 @@ function Portfolio() {
             paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius, lorem ut efficitur commodo, lacus ex cursus enim"
             topic="Project 5"
           />
-          <PortfolioProjectCard
+          <PortfolioProjectCardSix
             onClick={() => {
               const query = new URLSearchParams({
                 name: "Project 6",
@@ -137,7 +146,7 @@ function Portfolio() {
 
         {/* Mobile project card */}
         <div className="visible sm:hidden">
-        <PortfolioProjectCard
+        <PortfolioProjectCardSeven
             onClick={() => {
               const query = new URLSearchParams({
                 name: "Project 1",
@@ -156,7 +165,7 @@ function Portfolio() {
             paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius, lorem ut efficitur commodo, lacus ex cursus enim"
             topic="Project 1"
           />
-          <PortfolioProjectCard
+          <PortfolioProjectCardEight
             onClick={() => {
               const query = new URLSearchParams({
                 name: "Project 2",
@@ -175,7 +184,7 @@ function Portfolio() {
             paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius, lorem ut efficitur commodo, lacus ex cursus enim"
             topic="Project 2"
           />
-          <PortfolioProjectCard
+          <PortfolioProjectCardNine
             onClick={() => {
               const query = new URLSearchParams({
                 name: "Project 3",

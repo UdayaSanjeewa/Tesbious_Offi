@@ -2,13 +2,12 @@
 
 import React, { MouseEventHandler, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { Icon } from "../atoms/Icon";
+import { Icon } from "../../atoms/Icon";
 import { motion } from "framer-motion";
-import Button from "../atoms/Button";
+import Button from "../../atoms/Button";
 import { div } from "framer-motion/client";
-import PortfolioImageOne from "../organisms/PortfolioPage/PortfolioImageOne";
-import PortfolioImageTwo from "../organisms/PortfolioPage/PortfolioImageTwo";
-
+import PortfolioImageOne from "./PortfolioImageOne";
+import PortfolioImageTwo from "./PortfolioImageTwo";
 
 // Define motion variants
 const fadeSlideUp = {
@@ -35,14 +34,13 @@ interface PortfolioProjectCardProps {
   onClick: MouseEventHandler<HTMLButtonElement>;
 }
 
-const PortfolioProjectCard = ({
+const PortfolioProjectCardSix = ({
   imageSrc,
   paragraph,
   topic,
   onClick,
 }: PortfolioProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
-
 
   const [seeMoreClicked, setSeeMoreClicked] = useState(false);
 
@@ -53,7 +51,15 @@ const PortfolioProjectCard = ({
         <Button onClick={onClick}>
           <div className="bg-[#111827] rounded-[26px]  group cursor-pointer">
             <div className="sm:relative sm:inset-0">
-              <PortfolioImageOne />
+              <div>
+                <div className="flex items-center">
+                  <img
+                    src="/images/frame1.png"
+                    alt="ProjectImage"
+                    className="mx-4 my-3 w-full h-[260px]"
+                  />
+                </div>
+              </div>
             </div>
 
             <div className="flex flex-row">
@@ -79,53 +85,53 @@ const PortfolioProjectCard = ({
           </div>
         </Button>
       </div>
-      
-{/* MOBILE */}
+
+      {/* MOBILE */}
       <motion.div className="relative w-full sm:hidden block">
-    {/* Overlay (fades in with opacity) */}
-    <motion.div
-      className="absolute inset-0 [background-color:#00000033] z-10"
-      variants={fadeOnly} // Uses fade animation only
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
-    />
+        {/* Overlay (fades in with opacity) */}
+        <motion.div
+          className="absolute inset-0 [background-color:#00000033] z-10"
+          variants={fadeOnly} // Uses fade animation only
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+        />
 
-    {/* Animated Text (Slides up) */}
-    <motion.div
-      className="absolute top-[40%] left-4 z-20 text-white ml-8 mr-20"
-      variants={fadeSlideUp}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
-    >
-      <h1 className="text-[35px] font-bold">{topic}</h1>
-      <p className="text-[12px] font-medium mt-2">{paragraph}</p>
-    </motion.div>
+        {/* Animated Text (Slides up) */}
+        <motion.div
+          className="absolute top-[40%] left-4 z-20 text-white ml-8 mr-20"
+          variants={fadeSlideUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+        >
+          <h1 className="text-[35px] font-bold">{topic}</h1>
+          <p className="text-[12px] font-medium mt-2">{paragraph}</p>
+        </motion.div>
 
-    {/* Button (fades in later, with delay) */}
-    <motion.div
-      className="absolute top-[55%] left-4 z-20 ml-8"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.5, duration: 0.6 }}
-      viewport={{ once: false, amount: 0.5 }}
-    >
-       <button
+        {/* Button (fades in later, with delay) */}
+        <motion.div
+          className="absolute top-[55%] left-4 z-20 ml-8"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
+          viewport={{ once: false, amount: 0.5 }}
+        >
+          <button
             className={`rounded-full px-6 py-2 font-medium text-[14px] mt-[85%] transition-colors duration-300 ${
-              seeMoreClicked ? 'bg-[#6C63FF] text-white' : 'bg-white text-black'
+              seeMoreClicked ? "bg-[#6C63FF] text-white" : "bg-white text-black"
             }`}
-             onClick={onClick}
+            onClick={onClick}
           >
             See More
           </button>
-    </motion.div>
+        </motion.div>
 
-    {/* Background Image */}
-    <PortfolioImageTwo />
-  </motion.div>
+        {/* Background Image */}
+        <PortfolioImageTwo />
+      </motion.div>
     </div>
   );
 };
 
-export default PortfolioProjectCard;
+export default PortfolioProjectCardSix;

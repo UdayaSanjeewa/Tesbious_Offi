@@ -5,9 +5,9 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 
 import NavButton from "../atoms/Button";
-import Logo from "../atoms/Image";
 import NavLink from "../molecules/NavLink";
 import NavDropdown from "../molecules/NavDropdown";
+import NavbarLogo from "./HomePage/Navbar/NavbarLogo";
 
 const serviceItems = [
   { label: "Digital Marketing", href: "/Our-Services/Digital-Marketing" },
@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
       {/* Top Nav */}
       <nav className="lg:pl-10 lg:pr-10 fixed rounded-[21px] w-4/5  mt-6 sm:mt-0 shadow-2xl sm:shadow-none sm:rounded-none sm:w-full h-[57px]  flex sm:flex-row lg:w-full items-center justify-between p-4 bg-white sm:bg-[#FFFFFF8C] top-0 z-50">
         <div className="flex items-center justify-center">
-          <Logo src="/images/logo.png" alt="tesbious logo" width={46.48} height={41} />
+          <NavbarLogo />
           <p className="font-[600] text-[20px] sm:hidden ml-2">Tesbious</p>
         </div>
 
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
             {/* Header */}
             <div className="flex justify-between items-center mb-10">
               <div className="flex items-center">
-                <Logo src="/images/logo.png" alt="tesbious logo" width={46.48} height={41} />
+                <NavbarLogo />
                 <p className="font-[600] text-[20px] ml-2">Tesbious</p>
               </div>
               <button

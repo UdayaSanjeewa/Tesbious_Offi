@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../../atoms/Button";
-import Logo from "../../atoms/Image";
 import Stroke from "../../atoms/Stroke";
+import ContentSwitcherOneLogo from "../../organisms/HomePage/AboutUs/ContentSwitcherOneLogo";
+import ContentSwitcherTwoLogo from "../../organisms/HomePage/AboutUs/ContentSwitcherTwoLogo";
+import ContentSwitcherThreeLogo from "../../organisms/HomePage/AboutUs/ContentSwitcherThreeLogo";
+import ContentSwitcherFourLogo from "../../organisms/HomePage/AboutUs/ContentSwitcherFourLogo";
+import ContentSwitcherFiveLogo from "../../organisms/HomePage/AboutUs/ContentSwitcherFiveLogo";
+import ContentSwitcherSixLogo from "../../organisms/HomePage/AboutUs/ContentSwitcherSixLogo";
+import ContentSwitcherSevenLogo from "../../organisms/HomePage/AboutUs/ContentSwitcherSevenLogo";
+import ContentSwitcherEightLogo from "../../organisms/HomePage/AboutUs/ContentSwitcherEightLogo";
 
 interface ContentProps {
   heading: string;
@@ -77,75 +84,35 @@ const ContentSwitcher: React.FC<ContentSwitcherProps> = ({ contentData }) => {
               </div>
               <div className="hidden xl:flex ml-[200px] xl:gap-10">
                 <Button onClick={() => handleSwitch(-1)}>
-                  <Logo
-                    src="/images/arrowLeft.svg"
-                    className="flex mt-[21px]"
-                    width={80}
-                    height={100}
-                  />
+                  <ContentSwitcherOneLogo />
                 </Button>
                 <Button onClick={() => handleSwitch(1)}>
-                  <Logo
-                    src="/images/arrowRight.svg"
-                    className="flex mb-[25px]"
-                    width={80}
-                    height={100}
-                  />
+                  <ContentSwitcherTwoLogo />
                 </Button>
               </div>
 
               <div className="sm:flex pl-20 md:hidden gap-2">
                 <Button onClick={() => handleSwitch(-1)}>
-                  <Logo
-                    src="/images/arrowLeft.svg"
-                    className="flex mt-[10px]"
-                    width={30}
-                    height={50}
-                  />
+                  <ContentSwitcherThreeLogo />
                 </Button>
                 <Button onClick={() => handleSwitch(1)}>
-                  <Logo
-                    src="/images/arrowRight.svg"
-                    className="flex mb-[10px]"
-                    width={30}
-                    height={50}
-                  />
+                  <ContentSwitcherFourLogo />
                 </Button>
               </div>
               <div className="pl-20 md:flex mt-[10px] sm:hidden lg:hidden gap-2">
                 <Button onClick={() => handleSwitch(-1)}>
-                  <Logo
-                    src="/images/arrowLeft.svg"
-                    className="flex mt-[10px]"
-                    width={40}
-                    height={70}
-                  />
+                  <ContentSwitcherFiveLogo />
                 </Button>
                 <Button onClick={() => handleSwitch(1)}>
-                  <Logo
-                    src="/images/arrowRight.svg"
-                    className="flex mb-[10px]"
-                    width={40}
-                    height={70}
-                  />
+                  <ContentSwitcherSixLogo />
                 </Button>
               </div>
               <div className="pl-40 lg:flex mt-[10px] sm:hidden xl:hidden gap-2">
                 <Button onClick={() => handleSwitch(-1)}>
-                  <Logo
-                    src="/images/arrowLeft.svg"
-                    className="flex mt-[17px]"
-                    width={50}
-                    height={80}
-                  />
+                  <ContentSwitcherSevenLogo />
                 </Button>
                 <Button onClick={() => handleSwitch(1)}>
-                  <Logo
-                    src="/images/arrowRight.svg"
-                    className="flex mb-[10px]"
-                    width={50}
-                    height={80}
-                  />
+                  <ContentSwitcherEightLogo />
                 </Button>
               </div>
             </div>

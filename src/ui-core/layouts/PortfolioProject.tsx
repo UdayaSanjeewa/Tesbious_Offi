@@ -1,65 +1,7 @@
-// "use client";
-
-// import React from "react";
-// import Navbar from "../components/organisms/Navbar";
-// import PortfolioImage from "../components/atoms/PortfolioImage";
-// import ProjectHeader from "../components/organisms/ProjectPage/ProjectHeader";
-// import ProjectDetails from "../components/organisms/ProjectPage/ProjectDetails";
-// import PortfolioContactUs from "../components/organisms/PortfolioPage/PortfolioContactUs";
-// import { useSearchParams, useRouter } from "next/navigation"; // ✅ correct imports
-// import Footer from "../components/organisms/Footer";
-
-// const PortfolioProject = () => {
-//   const searchParams = useSearchParams();
-//   const router = useRouter(); // ✅ hook used correctly
-
-//   const name = searchParams.get("name") || "";
-//   const client = searchParams.get("client") || "";
-//   const service1 = searchParams.get("service1") || "";
-//   const service2 = searchParams.get("service2") || "";
-//   const service3 = searchParams.get("service3") || "";
-//   const duration = searchParams.get("duration") || "";
-//   const topic = searchParams.get("topic") || "";
-//   const paragraph = searchParams.get("paragraph") || "";
-
-//   return (
-//     <div>
-//       <Navbar />
-//       <div className="md:mt-[5%] ">
-//         <ProjectHeader
-//           name={name}
-//           client={client}
-//           service1={service1}
-//           service2={service2}
-//           service3={service3}
-//           duration={duration}
-//         />
-//       </div>
-//       <div className="bg-[url(/images/projectImg.png)] bg-fit bg-[length:100%] lg:h-[680px] md:h-[500px] h-[210px] w-full"></div>
-//       <div className="">
-//         <ProjectDetails topic={topic} paragraph={paragraph} />
-//       </div>
-//       <div className="mb-40 mt-20">
-//         <PortfolioContactUs
-//           onClick={() => {
-//             router.push("/Contact-Us");
-//           }}
-//         />
-//       </div>
-//       <div>
-//         <Footer/>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default PortfolioProject;
-
 "use client";
 
 import React from "react";
 import Navbar from "../components/organisms/Navbar";
-import PortfolioImage from "../components/atoms/PortfolioImage";
 import ProjectHeader from "../components/organisms/ProjectPage/ProjectHeader";
 import ProjectDetails from "../components/organisms/ProjectPage/ProjectDetails";
 import PortfolioContactUs from "../components/organisms/PortfolioPage/PortfolioContactUs";

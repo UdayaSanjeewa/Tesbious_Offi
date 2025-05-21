@@ -2,12 +2,12 @@
 
 import React, { MouseEventHandler, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { Icon } from "../atoms/Icon";
+import { Icon } from "../../atoms/Icon";
 import { motion } from "framer-motion";
-import Button from "../atoms/Button";
+import Button from "../../atoms/Button";
 import { div } from "framer-motion/client";
-import PortfolioImageOne from "../organisms/PortfolioPage/PortfolioImageOne";
-import PortfolioImageTwo from "../organisms/PortfolioPage/PortfolioImageTwo";
+import PortfolioImageOne from "./PortfolioImageOne";
+import PortfolioImageTwo from "./PortfolioImageTwo";
 
 
 // Define motion variants
@@ -35,7 +35,7 @@ interface PortfolioProjectCardProps {
   onClick: MouseEventHandler<HTMLButtonElement>;
 }
 
-const PortfolioProjectCard = ({
+const PortfolioProjectCardFive = ({
   imageSrc,
   paragraph,
   topic,
@@ -53,7 +53,11 @@ const PortfolioProjectCard = ({
         <Button onClick={onClick}>
           <div className="bg-[#111827] rounded-[26px]  group cursor-pointer">
             <div className="sm:relative sm:inset-0">
-              <PortfolioImageOne />
+              <div>
+     <div className="flex items-center">
+            <img src="/images/frame2.png" alt="ProjectImage" className="mx-4 my-3 w-full h-[260px]"/>
+        </div>
+  </div>
             </div>
 
             <div className="flex flex-row">
@@ -128,4 +132,4 @@ const PortfolioProjectCard = ({
   );
 };
 
-export default PortfolioProjectCard;
+export default PortfolioProjectCardFive;

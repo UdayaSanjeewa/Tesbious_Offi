@@ -1,13 +1,13 @@
-import Logo from "../atoms/Image";
 import { Paragraph } from "../atoms/Typography";
 import { FaPhone } from "react-icons/fa";
 import { IoMailSharp } from "react-icons/io5";
+import FooterLogoOne from "../organisms/HomePage/Footer/FooterLogoOne";
 
 const FooterDetails = () => {
   return (
     <div className="w-[296px] h-[114px]">
       <div className="flex items-center gap-16">
-        <Logo src="/images/logo.png" className="w-[64px] h-[59px]" />
+        <FooterLogoOne />
         <Paragraph
           text="Tesbious"
           className="text-white text-[35px] font-[600] "

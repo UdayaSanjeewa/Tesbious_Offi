@@ -5,6 +5,7 @@ import ClientInfo from "../../molecules/HomePage/ClientInfo";
 import ClientContent from "../../molecules/HomePage/ClientContent";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AvatarStatic from "./StaticSections/AvatarStatic";
 
 const comments = [
   {
@@ -57,11 +58,7 @@ const ClientCard: React.FC<ClientCardProps> = ({ bgColour, borderCol, textColour
       <div className="relative z-10 flex items-center justify-center w-full h-full">
         <div className="flex sm:gap-5 md:gap-8 xl:gap-10 items-center">
           <div className="text-center">
-            <Avatar
-              src={"/images/man.jpeg"}
-              alt={"man"}
-              className="sm:w-[250px] sm:h-[250px] lg:w-[350px] lg:h-[370px] xl:w-[401px] xl:h-[558px] object-cover rounded-[12px] shadow-xl"
-            />
+            <AvatarStatic />
           </div>
 
           <div className="w-auto xl:h-[600px] xl:w-[740px]">
