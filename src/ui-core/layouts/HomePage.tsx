@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/organisms/Navbar";
 import Hero from "../components/organisms/HomePage/Hero";
 import BeyondTheFuture from "../components/organisms/HomePage/BeyondTheFuture";
@@ -16,10 +16,20 @@ import StatSection from "../components/organisms/StatSection";
 import CommentsMobile from "../components/organisms/HomePage/CommentsMobile";
 import StatSectionMobile from "../components/organisms/StatSectionMobile";
 import EmailSectionMobile from "../components/organisms/HomePage/EmailSectionMobile";
+import DevelopmentModal from "../components/atoms/DevelopmentModal";
 
 function HomePage() {
+  const [showModal, setShowModal] = useState(true);
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="bg-white">
+      {/* ✅ Development Modal */}
+      <DevelopmentModal isOpen={showModal} onClose={handleCloseModal} />
+
       <div className="flex w-full md:w-auto justify-center">
         <Navbar />
       </div>
